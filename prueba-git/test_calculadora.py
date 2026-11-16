@@ -54,3 +54,7 @@ def test_clasificar_edad_senior():
 def test_clasificar_edad_negativa():
     with pytest.raises(ValueError):
         clasificar_edad(-5)
+
+def test_es_multiplo():
+    assert es_multiplo(10, 5) is True
+    assert not es_multiplo(10, 3)

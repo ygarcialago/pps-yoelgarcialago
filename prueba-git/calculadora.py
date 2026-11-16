@@ -18,11 +18,6 @@ def calcular_descuento(precio: float, porcentaje: float) -> float:
     """
     if precio < 0:
         raise ValueError("Precio negativo: no permitido.")
-    if porcentaje < 0 or porcentaje > 100:
-        raise ValueError("El porcentaje debe estar entre 0 y 100.")
-
-    descuento = precio * (porcentaje / 100)
-    return round(precio - descuento, 2)
 
 
 def clasificar_edad(edad: int) -> str:
