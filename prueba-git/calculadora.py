@@ -17,7 +17,7 @@ def calcular_descuento(precio: float, porcentaje: float) -> float:
     o si el precio es negativo.
     """
     if precio < 0:
-        raise ValueError("El precio no puede ser negativo.")
+        raise ValueError("Error: el precio debe ser mayor o igual que 0.")
     if porcentaje < 0 or porcentaje > 100:
         raise ValueError("El porcentaje debe estar entre 0 y 100.")
 
