@@ -34,3 +34,9 @@ def clasificar_edad(edad: int) -> str:
     if edad < 65:
         return "adulto"
     return "sénior"
+
+def es_multiplo(numero: int, divisor: int) -> bool:
+    """Indica si numero es múltiplo de divisor."""
+    if divisor == 0:
+        raise ValueError("El divisor no puede ser 0.")
+    return numero % divisor == 0
