@@ -1,0 +1,15 @@
+Pregunta 1. ¿Qué diferencia hay entre comprobar es_par(4) con un solo test y con parametrize? ¿Qué
+ganas?
+Con parametrize puedes comprobar varios valores y casos sin tener que hacer varias funciones test.
+
+Pregunta 2. ¿Por qué precio_con_iva(10) se compara con pytest.approx y no con == a secas?
+Porque al calcular números con decimales (coma flotante), si lo comparas con == puede que no te dé bien, ya que los ordenadores no interpretan los números al igual que nosotros.
+
+Pregunta 3. ¿Para qué sirve el match= de pytest.raises? ¿Qué pasaría sin él?
+match= hace que se lance el error con el motivo correcto. Sin él, solo se comprobaria el error que se lanza.
+
+Pregunta 4. En la tarea 7, ¿por qué conviene ver el test fallar antes de corregir el código?
+Porque así ves cómo se comporta el código con el caso en el que lo has puesto y te ayuda a darle solución al problema.
+
+Pregunta 5. Tienes todos los tests en verde. ¿Significa que tienda.py no tiene ningún error? Razónalo
+No, porque significa que el caso en el que lo has puesto ha pasado, pero no que en lo que tiene que hacer. Es decir, puedes poner el caso para que pase el test pero no para lo que hiciste la función que testeas.
